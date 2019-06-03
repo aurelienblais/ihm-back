@@ -8,9 +8,16 @@
       <ObjectId>16384</ObjectId>
       <StateNumber>556</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>562</IntrospectionStateNumber>
+      <IntrospectionStateNumber>570</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
+      <Relations>sequence|table|16401|16403|1
+sequence|table|16412|16414|1
+sequence|table|16423|16425|1
+sequence|table|16434|16436|1
+sequence|table|16445|16447|1
+sequence|table|16458|16460|1
+</Relations>
     </database>
     <database id="3" parent="1" name="postgres">
       <ObjectId>12994</ObjectId>
@@ -86,7 +93,7 @@
       <Comment>standard public schema</Comment>
       <StateNumber>351</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>563</IntrospectionStateNumber>
+      <IntrospectionStateNumber>571</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -146,72 +153,461 @@
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <table id="23" parent="15" name="ar_internal_metadata">
+    <sequence id="23" parent="15" name="cellules_id_seq">
+      <ObjectId>16412</ObjectId>
+      <StateNumber>565</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="24" parent="15" name="machine_types_id_seq">
+      <ObjectId>16401</ObjectId>
+      <StateNumber>564</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="25" parent="15" name="machines_id_seq">
+      <ObjectId>16445</ObjectId>
+      <StateNumber>568</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="26" parent="15" name="piece_parts_id_seq">
+      <ObjectId>16434</ObjectId>
+      <StateNumber>567</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="27" parent="15" name="rule_steps_id_seq">
+      <ObjectId>16458</ObjectId>
+      <StateNumber>569</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="28" parent="15" name="rules_id_seq">
+      <ObjectId>16423</ObjectId>
+      <StateNumber>566</StateNumber>
+      <Owner>postgres</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="29" parent="15" name="ar_internal_metadata">
       <ObjectId>16393</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>558</StateNumber>
     </table>
-    <table id="24" parent="15" name="schema_migrations">
+    <table id="30" parent="15" name="cellules">
+      <ObjectId>16414</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>565</StateNumber>
+    </table>
+    <table id="31" parent="15" name="machine_types">
+      <ObjectId>16403</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>564</StateNumber>
+    </table>
+    <table id="32" parent="15" name="machines">
+      <ObjectId>16447</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>568</StateNumber>
+    </table>
+    <table id="33" parent="15" name="piece_parts">
+      <ObjectId>16436</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>567</StateNumber>
+    </table>
+    <table id="34" parent="15" name="rule_steps">
+      <ObjectId>16460</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>569</StateNumber>
+    </table>
+    <table id="35" parent="15" name="rules">
+      <ObjectId>16425</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>566</StateNumber>
+    </table>
+    <table id="36" parent="15" name="schema_migrations">
       <ObjectId>16385</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>557</StateNumber>
     </table>
-    <column id="25" parent="23" name="key">
+    <column id="37" parent="29" name="key">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>558</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="26" parent="23" name="value">
+    <column id="38" parent="29" name="value">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <StateNumber>558</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="27" parent="23" name="created_at">
+    <column id="39" parent="29" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>558</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="28" parent="23" name="updated_at">
+    <column id="40" parent="29" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>558</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="29" parent="23" name="ar_internal_metadata_pkey">
+    <index id="41" parent="29" name="ar_internal_metadata_pkey">
       <ObjectId>16399</ObjectId>
       <StateNumber>558</StateNumber>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="30" parent="23" name="ar_internal_metadata_pkey">
+    <key id="42" parent="29" name="ar_internal_metadata_pkey">
       <ObjectId>16400</ObjectId>
       <StateNumber>558</StateNumber>
       <ColNames>key</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
     </key>
-    <column id="31" parent="24" name="version">
+    <column id="43" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>565</StateNumber>
+      <DefaultExpression>nextval(&apos;cellules_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="44" parent="30" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>565</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="45" parent="30" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>565</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="46" parent="30" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>565</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="47" parent="30" name="cellules_pkey">
+      <ObjectId>16421</ObjectId>
+      <StateNumber>565</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="48" parent="30" name="cellules_pkey">
+      <ObjectId>16422</ObjectId>
+      <StateNumber>565</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>cellules_pkey</UnderlyingIndexName>
+    </key>
+    <column id="49" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>564</StateNumber>
+      <DefaultExpression>nextval(&apos;machine_types_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="50" parent="31" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>564</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="51" parent="31" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>564</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="52" parent="31" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>564</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="53" parent="31" name="machine_types_pkey">
+      <ObjectId>16410</ObjectId>
+      <StateNumber>564</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="54" parent="31" name="machine_types_pkey">
+      <ObjectId>16411</ObjectId>
+      <StateNumber>564</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>machine_types_pkey</UnderlyingIndexName>
+    </key>
+    <column id="55" parent="32" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>568</StateNumber>
+      <DefaultExpression>nextval(&apos;machines_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="56" parent="32" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>568</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="57" parent="32" name="available">
+      <Position>3</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>568</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="58" parent="32" name="cellule_id">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>568</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="59" parent="32" name="machine_type_id">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>568</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="60" parent="32" name="created_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>568</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="61" parent="32" name="updated_at">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>568</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="62" parent="32" name="machines_pkey">
+      <ObjectId>16454</ObjectId>
+      <StateNumber>568</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="63" parent="32" name="index_machines_on_cellule_id">
+      <ObjectId>16456</ObjectId>
+      <StateNumber>568</StateNumber>
+      <ColNames>cellule_id</ColNames>
+    </index>
+    <index id="64" parent="32" name="index_machines_on_machine_type_id">
+      <ObjectId>16457</ObjectId>
+      <StateNumber>568</StateNumber>
+      <ColNames>machine_type_id</ColNames>
+    </index>
+    <key id="65" parent="32" name="machines_pkey">
+      <ObjectId>16455</ObjectId>
+      <StateNumber>568</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>machines_pkey</UnderlyingIndexName>
+    </key>
+    <column id="66" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>567</StateNumber>
+      <DefaultExpression>nextval(&apos;piece_parts_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="67" parent="33" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>567</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="33" name="stock">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>567</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="69" parent="33" name="created_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>567</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="70" parent="33" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>567</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="71" parent="33" name="piece_parts_pkey">
+      <ObjectId>16443</ObjectId>
+      <StateNumber>567</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="72" parent="33" name="piece_parts_pkey">
+      <ObjectId>16444</ObjectId>
+      <StateNumber>567</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>piece_parts_pkey</UnderlyingIndexName>
+    </key>
+    <column id="73" parent="34" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>569</StateNumber>
+      <DefaultExpression>nextval(&apos;rule_steps_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="74" parent="34" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>569</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="34" name="order">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>569</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="76" parent="34" name="rule_id">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>569</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="77" parent="34" name="machine_id">
+      <Position>5</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>569</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="78" parent="34" name="piece_part_id">
+      <Position>6</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>569</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="79" parent="34" name="rule_steps_pkey">
+      <ObjectId>16467</ObjectId>
+      <StateNumber>569</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="80" parent="34" name="index_rule_steps_on_rule_id">
+      <ObjectId>16469</ObjectId>
+      <StateNumber>569</StateNumber>
+      <ColNames>rule_id</ColNames>
+    </index>
+    <index id="81" parent="34" name="index_rule_steps_on_machine_id">
+      <ObjectId>16470</ObjectId>
+      <StateNumber>569</StateNumber>
+      <ColNames>machine_id</ColNames>
+    </index>
+    <index id="82" parent="34" name="index_rule_steps_on_piece_part_id">
+      <ObjectId>16471</ObjectId>
+      <StateNumber>569</StateNumber>
+      <ColNames>piece_part_id</ColNames>
+    </index>
+    <key id="83" parent="34" name="rule_steps_pkey">
+      <ObjectId>16468</ObjectId>
+      <StateNumber>569</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>rule_steps_pkey</UnderlyingIndexName>
+    </key>
+    <column id="84" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>566</StateNumber>
+      <DefaultExpression>nextval(&apos;rules_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="85" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>566</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="86" parent="35" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>566</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="87" parent="35" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>566</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="88" parent="35" name="rules_pkey">
+      <ObjectId>16432</ObjectId>
+      <StateNumber>566</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="89" parent="35" name="rules_pkey">
+      <ObjectId>16433</ObjectId>
+      <StateNumber>566</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>rules_pkey</UnderlyingIndexName>
+    </key>
+    <column id="90" parent="36" name="version">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>557</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="32" parent="24" name="schema_migrations_pkey">
+    <index id="91" parent="36" name="schema_migrations_pkey">
       <ObjectId>16391</ObjectId>
       <StateNumber>557</StateNumber>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="33" parent="24" name="schema_migrations_pkey">
+    <key id="92" parent="36" name="schema_migrations_pkey">
       <ObjectId>16392</ObjectId>
       <StateNumber>557</StateNumber>
       <ColNames>version</ColNames>
