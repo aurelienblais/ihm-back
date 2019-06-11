@@ -36,6 +36,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v5.2.3, RVM: ruby-2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v5.2.3, RVM: ruby-2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v5.2.3, RVM: ruby-2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="apipie-rails (v0.5.16, RVM: ruby-2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v9.0.0, RVM: ruby-2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.4.4, RVM: ruby-2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, RVM: ruby-2.5.3) [gem]" level="application" />

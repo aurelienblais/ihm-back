@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :cellules
+  apipie
+  namespace :api do
+    resources :cellules
+  end
 end
