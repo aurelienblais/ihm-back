@@ -23,7 +23,7 @@
     <span class='divider'>/</span>
   </li>
   <li class='active'>
-    Cellules
+    Machines
     
   </li>
   
@@ -31,7 +31,7 @@
 
 <div class='page-header'>
   <h1>
-    Cellules
+    Machines
     <br>
     <small></small>
   </h1>
@@ -46,7 +46,7 @@
 
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/cellules/index.html'> >>> </a>
+      <a href='../apidoc/machines/index.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -54,10 +54,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            GET /api/cellules
+            GET /api/machines
           </a>
           <br>
-          <small>Return list of cellules</small>
+          <small>Return list of machines</small>
         </h2>
     </div>
 
@@ -72,7 +72,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>List of all cellules</p>
+      <p>List of all machines</p>
     <table class='table'>
       <thead>
         <tr>
@@ -90,7 +90,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/cellules/show.html'> >>> </a>
+      <a href='../apidoc/machines/show.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -98,10 +98,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            GET /api/cellules/:id
+            GET /api/machines/:id
           </a>
           <br>
-          <small>Return a single cellule</small>
+          <small>Return a single machine</small>
         </h2>
     </div>
 
@@ -132,7 +132,7 @@
     </td>
     <td>
       
-<p>Id of the cellule</p>
+<p>Id of the machine</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
@@ -152,7 +152,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Details of a cellule</p>
+      <p>Details of a machine</p>
     <table class='table'>
       <thead>
         <tr>
@@ -170,7 +170,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/cellules/create.html'> >>> </a>
+      <a href='../apidoc/machines/create.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -178,10 +178,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            POST /api/cellules
+            POST /api/machines
           </a>
           <br>
-          <small>Create a new cellule</small>
+          <small>Create a new machine</small>
         </h2>
     </div>
 
@@ -231,12 +231,84 @@
     </td>
     <td>
       
-<p>Name of the cellule</p>
+<p>Name of the machine</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
             <li>
 <p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>available </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Status of the machine</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be one of: <code>true</code>, <code>false</code>.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>cellule_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>ID of the belonging cellule</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>machine_type_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>ID of the belonging machine type</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
 </li>
         </ul>
 
@@ -251,7 +323,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Newly created cellule</p>
+      <p>Newly created machine</p>
     <table class='table'>
       <thead>
         <tr>
@@ -269,7 +341,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/cellules/update.html'> >>> </a>
+      <a href='../apidoc/machines/update.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -277,10 +349,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            PATCH /api/cellules/:id
+            PATCH /api/machines/:id
           </a>
           <br>
-          <small></small>
+          <small>Update a machine</small>
         </h2>
     </div>
 
@@ -322,7 +394,7 @@
     <tbody>
         <tr style='background-color:rgb(255,255,255);'>
     <td>
-      <strong>id </strong><br>
+      <strong>name </strong><br>
       <small>
         required
         
@@ -330,12 +402,12 @@
     </td>
     <td>
       
-<p>Id of the cellule</p>
+<p>Name of the machine</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
             <li>
-<p>Must be a number.</p>
+<p>Must be a String</p>
 </li>
         </ul>
 
@@ -346,7 +418,7 @@
   
   <tr style='background-color:rgb(255,255,255);'>
     <td>
-      <strong>name </strong><br>
+      <strong>available </strong><br>
       <small>
         required
         
@@ -354,12 +426,60 @@
     </td>
     <td>
       
-<p>Name of the cellule</p>
+<p>Status of the machine</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
             <li>
-<p>Must be a String</p>
+<p>Must be one of: <code>true</code>, <code>false</code>.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>cellule_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>ID of the belonging cellule</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>machine_type_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>ID of the belonging machine type</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a Integer</p>
 </li>
         </ul>
 
@@ -374,7 +494,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Updated cellule</p>
+      <p>Updated machine</p>
     <table class='table'>
       <thead>
         <tr>
@@ -392,7 +512,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/cellules/destroy.html'> >>> </a>
+      <a href='../apidoc/machines/destroy.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -400,7 +520,7 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            DELETE /api/cellules/:id
+            DELETE /api/machines/:id
           </a>
           <br>
           <small></small>
@@ -453,7 +573,7 @@
     </td>
     <td>
       
-<p>Id of the cellule</p>
+<p>Id of the machine</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
@@ -473,7 +593,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Cellule has been destroyed</p>
+      <p>Machine has been destroyed</p>
     <table class='table'>
       <thead>
         <tr>

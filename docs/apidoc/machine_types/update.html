@@ -23,22 +23,22 @@
     <span class='divider'>/</span>
   </li>
   <li>
-    <a href='../../apidoc/cellules.html'>
-      Cellules
+    <a href='../../apidoc/machine_types.html'>
+      Machine types
       
     </a>
     <span class='divider'>/</span>
   </li>
-  <li class='active'>destroy</li>
+  <li class='active'>update</li>
   
 
 </ul>
 
   <div class='page-header'>
     <h1>
-      DELETE /api/cellules/:id
+      PATCH /api/machine_types/:id
       <br>
-      <small></small>
+      <small>Update a machine type</small>
     </h1>
   </div>
 
@@ -80,7 +80,7 @@
     <tbody>
         <tr style='background-color:rgb(255,255,255);'>
     <td>
-      <strong>id </strong><br>
+      <strong>name </strong><br>
       <small>
         required
         
@@ -88,12 +88,12 @@
     </td>
     <td>
       
-<p>Id of the cellule</p>
+<p>Name of the machine type</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
             <li>
-<p>Must be a number.</p>
+<p>Must be a String</p>
 </li>
         </ul>
 
@@ -108,7 +108,7 @@
   <h2><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h2>
     <h3>Code: 200</h3>
       <h4>Description:</h4>
-      <p>Cellule has been destroyed</p>
+      <p>Updated machine</p>
     <table class='table'>
       <thead>
         <tr>

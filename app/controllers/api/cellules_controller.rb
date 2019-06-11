@@ -1,9 +1,9 @@
-class CellulesController < ApplicationController
+class Api::CellulesController < ApplicationController
 
   api :GET, '/cellules/', 'Return list of cellules'
   returns code: 200, desc: 'List of all cellules'
   def index
-    render json: CelluleSerializer.new(Cellule.all).serializable_hash
+    render json: CelluleShortSerializer.new(Cellule.all).serializable_hash
   end
 
   api :GET, '/cellules/:id', 'Return a single cellule'
@@ -13,7 +13,7 @@ class CellulesController < ApplicationController
     render json: CelluleSerializer.new(Cellule.find(params[:id])).serializable_hash
   end
 
-  api :POST, '/users/', 'Create a new cellule'
+  api :POST, '/cellules/', 'Create a new cellule'
   param :name, String, 'Name of the cellule', required: true
   returns code: 200, desc: 'Newly created cellule'
   error code: 400, desc: 'An error occured while processing'
@@ -24,7 +24,7 @@ class CellulesController < ApplicationController
     render json: { error: e.message }, status: 400
   end
 
-  api :PATCH, '/users/:id'
+  api :PATCH, '/cellules/:id'
   param :id, :number, 'Id of the cellule', required: true
   param :name, String, 'Name of the cellule', required: true
   returns code: 200, desc: 'Updated cellule'
@@ -37,7 +37,7 @@ class CellulesController < ApplicationController
     render json: { error: e.message }, status: 400
   end
 
-  api :DELETE, '/users/:id'
+  api :DELETE, '/cellules/:id'
   param :id, :number, 'Id of the cellule', required: true
   returns code: 200, desc: 'Cellule has been destroyed'
   error code: 400, desc: 'An error occured while processing'

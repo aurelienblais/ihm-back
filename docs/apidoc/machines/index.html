@@ -23,22 +23,22 @@
     <span class='divider'>/</span>
   </li>
   <li>
-    <a href='../../apidoc/cellules.html'>
-      Cellules
+    <a href='../../apidoc/machines.html'>
+      Machines
       
     </a>
     <span class='divider'>/</span>
   </li>
-  <li class='active'>destroy</li>
+  <li class='active'>index</li>
   
 
 </ul>
 
   <div class='page-header'>
     <h1>
-      DELETE /api/cellules/:id
+      GET /api/machines
       <br>
-      <small></small>
+      <small>Return list of machines</small>
     </h1>
   </div>
 
@@ -47,68 +47,13 @@
   
 
 
-  <h2>Errors</h2>
-  
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Code</th>
-			<th>Description</th>
-			
-		</tr>
-	</thead>
-
-	<tbody>
-			<tr>
-				<td><span class="label"> 400 </span></td>
-				<td>An error occured while processing</td>
-			</tr>
-	</tbody>
-</table>
 
 
 
-
-  <h2>Params</h2>
-  <table class='table'>
-    <thead>
-      <tr>
-        <th>Param name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr style='background-color:rgb(255,255,255);'>
-    <td>
-      <strong>id </strong><br>
-      <small>
-        required
-        
-      </small>
-    </td>
-    <td>
-      
-<p>Id of the cellule</p>
-
-        <p><strong>Validations:</strong></p>
-        <ul>
-            <li>
-<p>Must be a number.</p>
-</li>
-        </ul>
-
-    </td>
-
-  </tr>
-
-  
-
-    </tbody>
-  </table>
   <h2><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h2>
     <h3>Code: 200</h3>
       <h4>Description:</h4>
-      <p>Cellule has been destroyed</p>
+      <p>List of all machines</p>
     <table class='table'>
       <thead>
         <tr>

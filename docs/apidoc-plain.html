@@ -6,6 +6,21 @@
       <li><a href='#cellules-update'>update</a></li>
       <li><a href='#cellules-destroy'>destroy</a></li>
   </ul>
+  <h4><a href='#machine_types'>Machine types</a></h4>
+  <ul>
+      <li><a href='#machine_types-index'>index</a></li>
+      <li><a href='#machine_types-create'>create</a></li>
+      <li><a href='#machine_types-update'>update</a></li>
+      <li><a href='#machine_types-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#machines'>Machines</a></h4>
+  <ul>
+      <li><a href='#machines-index'>index</a></li>
+      <li><a href='#machines-show'>show</a></li>
+      <li><a href='#machines-create'>create</a></li>
+      <li><a href='#machines-update'>update</a></li>
+      <li><a href='#machines-destroy'>destroy</a></li>
+  </ul>
 
 
 
@@ -85,7 +100,7 @@
 
       <div>
           <h4>
-              POST /api/users
+              POST /api/cellules
             <br>
             <small>Create a new cellule</small>
           </h4>
@@ -129,7 +144,7 @@
 
       <div>
           <h4>
-              PATCH /api/users/:id
+              PATCH /api/cellules/:id
             <br>
             <small></small>
           </h4>
@@ -187,7 +202,7 @@
 
       <div>
           <h4>
-              DELETE /api/users/:id
+              DELETE /api/cellules/:id
             <br>
             <small></small>
           </h4>
@@ -217,6 +232,457 @@
       </small>
       
 <p>Id of the cellule</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="machine_types">
+      <a href='#machine_types'>Machine types</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="machine_types-index">
+      <a href='#machine_types'>Machine types</a> / <a href='#machine_types-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/machine_types
+            <br>
+            <small>Return list of machines types</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="machine_types-create">
+      <a href='#machine_types'>Machine types</a> / <a href='#machine_types-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /api/machine_types
+            <br>
+            <small>Create a new machine type</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the machine type</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="machine_types-update">
+      <a href='#machine_types'>Machine types</a> / <a href='#machine_types-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PATCH /api/machine_types/:id
+            <br>
+            <small>Update a machine type</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the machine type</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="machine_types-destroy">
+      <a href='#machine_types'>Machine types</a> / <a href='#machine_types-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /api/machine_types/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the machine type</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="machines">
+      <a href='#machines'>Machines</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="machines-index">
+      <a href='#machines'>Machines</a> / <a href='#machines-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/machines
+            <br>
+            <small>Return list of machines</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="machines-show">
+      <a href='#machines'>Machines</a> / <a href='#machines-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/machines/:id
+            <br>
+            <small>Return a single machine</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the machine</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="machines-create">
+      <a href='#machines'>Machines</a> / <a href='#machines-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /api/machines
+            <br>
+            <small>Create a new machine</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the machine</p>
+
+    </li>
+    
+    <li>
+      <strong>available </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be one of: <code>true</code>, <code>false</code>.</p>
+ ]
+      </small>
+      
+<p>Status of the machine</p>
+
+    </li>
+    
+    <li>
+      <strong>cellule_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a Integer</p>
+ ]
+      </small>
+      
+<p>ID of the belonging cellule</p>
+
+    </li>
+    
+    <li>
+      <strong>machine_type_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a Integer</p>
+ ]
+      </small>
+      
+<p>ID of the belonging machine type</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="machines-update">
+      <a href='#machines'>Machines</a> / <a href='#machines-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PATCH /api/machines/:id
+            <br>
+            <small>Update a machine</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the machine</p>
+
+    </li>
+    
+    <li>
+      <strong>available </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be one of: <code>true</code>, <code>false</code>.</p>
+ ]
+      </small>
+      
+<p>Status of the machine</p>
+
+    </li>
+    
+    <li>
+      <strong>cellule_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a Integer</p>
+ ]
+      </small>
+      
+<p>ID of the belonging cellule</p>
+
+    </li>
+    
+    <li>
+      <strong>machine_type_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a Integer</p>
+ ]
+      </small>
+      
+<p>ID of the belonging machine type</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="machines-destroy">
+      <a href='#machines'>Machines</a> / <a href='#machines-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /api/machines/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the machine</p>
 
     </li>
     
