@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235434ab-c6be-4b90-b9a6-b34e8788a357" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ihm-back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ihm-back.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cellules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cellules_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/apipie.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/apipie.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc-onepage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc-plain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/cellules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/cellules/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/cellules/destroy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/cellules/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/cellules/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/cellules/update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/javascripts/apipie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/javascripts/bundled/bootstrap-collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/javascripts/bundled/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/javascripts/bundled/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/javascripts/bundled/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/stylesheets/application.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/stylesheets/bundled/bootstrap-responsive.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/stylesheets/bundled/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/apidoc/stylesheets/bundled/prettify.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/cellules_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+            <state relative-caret-position="180">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -129,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/apipie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -184,8 +197,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/serializers/cellule_serializer.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/apipie.rb" />
         <option value="$PROJECT_DIR$/app/controllers/cellules_controller.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/apipie.rb" />
       </list>
     </option>
   </component>
@@ -222,7 +235,7 @@
             <path>
               <item name="ihm-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="ihm-back" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -367,12 +380,12 @@
       <updated>1559566616745</updated>
       <workItem from="1559566618158" duration="3054000" />
       <workItem from="1559938648152" duration="21000" />
-      <workItem from="1560263447743" duration="1063000" />
+      <workItem from="1560263447743" duration="1509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4138000" />
+    <option name="totallyTimeSpent" value="4584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -621,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/apipie.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.5.3/gems/apipie-rails-0.5.16/lib/apipie/routing.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -651,8 +657,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/cellules_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        <state relative-caret-position="180">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/apipie.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
