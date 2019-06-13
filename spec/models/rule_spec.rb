@@ -2,9 +2,9 @@
 
 require 'rails_helper'
 
-describe RuleStep do
+describe Rule do
   before do
-    @object = FactoryBot.create(:rule_step)
+    @object = FactoryBot.create(:rule)
   end
 
   subject { @object }
@@ -14,13 +14,10 @@ describe RuleStep do
   end
 
   describe 'Associations' do
-    it { should belong_to(:rule) }
-    it { should belong_to(:machine) }
-    it { should belong_to(:piece_part) }
+    it { should have_many(:rule_steps) }
   end
 
   describe 'Validations' do
     it { should validate_presence_of(:name) }
-    it { should validate_presence_of(:order) }
   end
 end

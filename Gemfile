@@ -16,9 +16,9 @@ gem 'fast_jsonapi'
 gem 'rack-cors'
 
 group :development, :test do
+  gem 'apipie-rails'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'
-  gem 'apipie-rails'
 end
 
 group :test do

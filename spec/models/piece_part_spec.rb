@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe PiecePart do
@@ -19,5 +21,4 @@ describe PiecePart do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:stock) }
   end
-
 end

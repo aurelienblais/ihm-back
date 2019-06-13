@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Machine do
@@ -20,5 +22,4 @@ describe Machine do
   describe 'Validations' do
     it { should validate_presence_of(:name) }
   end
-
 end

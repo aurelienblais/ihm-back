@@ -7,12 +7,4 @@ class Machine < ActiveRecord::Base
   has_many :rules, through: :rule_steps
 
   validates_presence_of :name
-
-  before_commit :set_available
-
-  private
-
-  def set_available
-    available = !!available
-  end
 end

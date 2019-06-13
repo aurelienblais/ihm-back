@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :piece_part do
     sequence(:name) { |n| "MachineType #{n}" }
