@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235434ab-c6be-4b90-b9a6-b34e8788a357" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/cellules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/cellules_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/machine_types_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/machine_types_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/machines_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/machines_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/cellules_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/cellules_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/machine_types_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/machine_types_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/machines_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/machines_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/piece_parts_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/piece_parts_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/rule_steps_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/rule_steps_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,16 +104,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="90">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -219,8 +207,8 @@
         <option value="$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" />
         <option value="$PROJECT_DIR$/spec/models/application_record_spec.rb" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -470,7 +458,7 @@
       <workItem from="1559938648152" duration="21000" />
       <workItem from="1560263447743" duration="3825000" />
       <workItem from="1560326465764" duration="69000" />
-      <workItem from="1560423969745" duration="7419000" />
+      <workItem from="1560423969745" duration="7497000" />
     </task>
     <servers />
   </component>
@@ -480,13 +468,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14388000" />
+    <option name="totallyTimeSpent" value="14466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -499,7 +487,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928468" weight="0.32961586" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49284694" visible="true" weight="0.32961586" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49284694" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5071531" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49713877" weight="0.32961586" />
@@ -866,13 +854,6 @@
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -880,6 +861,13 @@
             <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
