@@ -28,6 +28,7 @@
   <h4><a href='#machine_types'>Machine types</a></h4>
   <ul>
       <li><a href='#machine_types-index'>index</a></li>
+      <li><a href='#machine_types-show'>show</a></li>
       <li><a href='#machine_types-create'>create</a></li>
       <li><a href='#machine_types-update'>update</a></li>
       <li><a href='#machine_types-destroy'>destroy</a></li>
@@ -39,6 +40,30 @@
       <li><a href='#machines-create'>create</a></li>
       <li><a href='#machines-update'>update</a></li>
       <li><a href='#machines-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#piece_parts'>Piece parts</a></h4>
+  <ul>
+      <li><a href='#piece_parts-index'>index</a></li>
+      <li><a href='#piece_parts-show'>show</a></li>
+      <li><a href='#piece_parts-create'>create</a></li>
+      <li><a href='#piece_parts-update'>update</a></li>
+      <li><a href='#piece_parts-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#rule_steps'>Rule steps</a></h4>
+  <ul>
+      <li><a href='#rule_steps-index'>index</a></li>
+      <li><a href='#rule_steps-show'>show</a></li>
+      <li><a href='#rule_steps-create'>create</a></li>
+      <li><a href='#rule_steps-update'>update</a></li>
+      <li><a href='#rule_steps-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#rules'>Rules</a></h4>
+  <ul>
+      <li><a href='#rules-index'>index</a></li>
+      <li><a href='#rules-show'>show</a></li>
+      <li><a href='#rules-create'>create</a></li>
+      <li><a href='#rules-update'>update</a></li>
+      <li><a href='#rules-destroy'>destroy</a></li>
   </ul>
 
 
@@ -474,6 +499,70 @@
         
 
 
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='machine_types-show'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#machine_types'>Machine types</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>show</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#machine_types-show'>
+              GET /api/machine_types/:id
+            </a><br>
+            <small>Return a single machine type</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Id of the machine type</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
       </div>
       <hr>
 
@@ -1209,6 +1298,1320 @@
     <td>
       
 <p>Id of the machine</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+  </div>
+
+  <ul class='breadcrumb'  id='piece_parts'>
+    <li><a href='#'>IhmBack</a><span class='divider'>/</span></li>
+    <li class='active'>Piece parts</li>
+  </ul>
+
+  <div class='page-header'>
+    <h1>
+      <a href='#piece_parts'>Piece parts</a><br>
+      <small></small>
+    </h1>
+  </div>
+
+
+  <div class='accordion' id='accordion'>
+
+      <hr>
+
+      <ul class='breadcrumb' id='piece_parts-index'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#piece_parts'>Piece parts</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>index</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#piece_parts-index'>
+              GET /api/piece_parts
+            </a><br>
+            <small>Return list of piece_parts</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='piece_parts-show'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#piece_parts'>Piece parts</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>show</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#piece_parts-show'>
+              GET /api/piece_parts/:id
+            </a><br>
+            <small>Return a single piece part</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Id of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='piece_parts-create'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#piece_parts'>Piece parts</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>create</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#piece_parts-create'>
+              POST /api/piece_parts
+            </a><br>
+            <small>Create a new piece part</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Name of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>stock </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Stock of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='piece_parts-update'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#piece_parts'>Piece parts</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>update</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#piece_parts-update'>
+              PATCH /api/piece_parts/:id
+            </a><br>
+            <small>Update a piece part</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Name of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>stock </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Stock of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='piece_parts-destroy'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#piece_parts'>Piece parts</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>destroy</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#piece_parts-destroy'>
+              DELETE /api/piece_parts/:id
+            </a><br>
+            <small></small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Id of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+  </div>
+
+  <ul class='breadcrumb'  id='rule_steps'>
+    <li><a href='#'>IhmBack</a><span class='divider'>/</span></li>
+    <li class='active'>Rule steps</li>
+  </ul>
+
+  <div class='page-header'>
+    <h1>
+      <a href='#rule_steps'>Rule steps</a><br>
+      <small></small>
+    </h1>
+  </div>
+
+
+  <div class='accordion' id='accordion'>
+
+      <hr>
+
+      <ul class='breadcrumb' id='rule_steps-index'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rule_steps'>Rule steps</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>index</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rule_steps-index'>
+              GET /api/rule_steps
+            </a><br>
+            <small>Return list of rule steps</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rule_steps-show'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rule_steps'>Rule steps</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>show</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rule_steps-show'>
+              GET /api/rule_steps/:id
+            </a><br>
+            <small>Return a single rule step</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Id of the rule step</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rule_steps-create'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rule_steps'>Rule steps</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>create</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rule_steps-create'>
+              POST /api/rule_steps
+            </a><br>
+            <small>Create a new rule step</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Name of the rule step</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>order </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Order in the process</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>rule_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Associated rule</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>machine_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Associated machine</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>piece_part_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Associated piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rule_steps-update'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rule_steps'>Rule steps</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>update</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rule_steps-update'>
+              PATCH /api/rule_steps/:id
+            </a><br>
+            <small>Update a rule step</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Name of the rule step</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>order </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Order in the process</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>rule_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Associated rule</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>machine_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Associated machine</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>piece_part_id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Associated piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rule_steps-destroy'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rule_steps'>Rule steps</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>destroy</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rule_steps-destroy'>
+              DELETE /api/rule_steps/:id
+            </a><br>
+            <small></small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Id of the rule step</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+  </div>
+
+  <ul class='breadcrumb'  id='rules'>
+    <li><a href='#'>IhmBack</a><span class='divider'>/</span></li>
+    <li class='active'>Rules</li>
+  </ul>
+
+  <div class='page-header'>
+    <h1>
+      <a href='#rules'>Rules</a><br>
+      <small></small>
+    </h1>
+  </div>
+
+
+  <div class='accordion' id='accordion'>
+
+      <hr>
+
+      <ul class='breadcrumb' id='rules-index'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rules'>Rules</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>index</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rules-index'>
+              GET /api/rules
+            </a><br>
+            <small>Return list of rules</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rules-show'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rules'>Rules</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>show</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rules-show'>
+              GET /api/rules/:id
+            </a><br>
+            <small>Return a single rule</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Id of the rule</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rules-create'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rules'>Rules</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>create</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rules-create'>
+              POST /api/rules
+            </a><br>
+            <small>Create a new rule</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Name of the rule</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rules-update'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rules'>Rules</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>update</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rules-update'>
+              PATCH /api/rules/:id
+            </a><br>
+            <small>Update a rule</small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>name </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Name of the rule</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='rules-destroy'>
+        <li>
+          <a href='#'>IhmBack</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#rules'>Rules</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>destroy</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#rules-destroy'>
+              DELETE /api/rules/:id
+            </a><br>
+            <small></small>
+          </h3>
+      </div>
+
+      <div>
+        
+
+          <h2>Errors</h2>
+          
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Description</th>
+			
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><span class="label"> 400 </span></td>
+				<td>An error occured while processing</td>
+			</tr>
+	</tbody>
+</table>
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Id of the rule</p>
 
         <p><strong>Validations:</strong></p>
         <ul>

@@ -23,7 +23,7 @@
     <span class='divider'>/</span>
   </li>
   <li class='active'>
-    Machine types
+    Piece parts
     
   </li>
   
@@ -31,7 +31,7 @@
 
 <div class='page-header'>
   <h1>
-    Machine types
+    Piece parts
     <br>
     <small></small>
   </h1>
@@ -46,7 +46,7 @@
 
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/machine_types/index.html'> >>> </a>
+      <a href='../apidoc/piece_parts/index.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -54,10 +54,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            GET /api/machine_types
+            GET /api/piece_parts
           </a>
           <br>
-          <small>Return list of machines types</small>
+          <small>Return list of piece_parts</small>
         </h2>
     </div>
 
@@ -72,7 +72,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>List of all machines types</p>
+      <p>List of all piece_parts</p>
     <table class='table'>
       <thead>
         <tr>
@@ -90,7 +90,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/machine_types/show.html'> >>> </a>
+      <a href='../apidoc/piece_parts/show.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -98,10 +98,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            GET /api/machine_types/:id
+            GET /api/piece_parts/:id
           </a>
           <br>
-          <small>Return a single machine type</small>
+          <small>Return a single piece part</small>
         </h2>
     </div>
 
@@ -132,7 +132,7 @@
     </td>
     <td>
       
-<p>Id of the machine type</p>
+<p>Id of the piece part</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
@@ -152,7 +152,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Details of a machine type</p>
+      <p>Details of a piece part</p>
     <table class='table'>
       <thead>
         <tr>
@@ -170,7 +170,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/machine_types/create.html'> >>> </a>
+      <a href='../apidoc/piece_parts/create.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -178,10 +178,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            POST /api/machine_types
+            POST /api/piece_parts
           </a>
           <br>
-          <small>Create a new machine type</small>
+          <small>Create a new piece part</small>
         </h2>
     </div>
 
@@ -231,12 +231,36 @@
     </td>
     <td>
       
-<p>Name of the machine type</p>
+<p>Name of the piece part</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
             <li>
 <p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>stock </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Stock of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
 </li>
         </ul>
 
@@ -251,7 +275,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Newly created machine type</p>
+      <p>Newly created piece part</p>
     <table class='table'>
       <thead>
         <tr>
@@ -269,7 +293,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/machine_types/update.html'> >>> </a>
+      <a href='../apidoc/piece_parts/update.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -277,10 +301,10 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            PATCH /api/machine_types/:id
+            PATCH /api/piece_parts/:id
           </a>
           <br>
-          <small>Update a machine type</small>
+          <small>Update a piece part</small>
         </h2>
     </div>
 
@@ -330,12 +354,36 @@
     </td>
     <td>
       
-<p>Name of the machine type</p>
+<p>Name of the piece part</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
             <li>
 <p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+  <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>stock </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>Stock of the piece part</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a number.</p>
 </li>
         </ul>
 
@@ -350,7 +398,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Updated machine</p>
+      <p>Updated piece part</p>
     <table class='table'>
       <thead>
         <tr>
@@ -368,7 +416,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/machine_types/destroy.html'> >>> </a>
+      <a href='../apidoc/piece_parts/destroy.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -376,7 +424,7 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            DELETE /api/machine_types/:id
+            DELETE /api/piece_parts/:id
           </a>
           <br>
           <small></small>
@@ -429,7 +477,7 @@
     </td>
     <td>
       
-<p>Id of the machine type</p>
+<p>Id of the piece part</p>
 
         <p><strong>Validations:</strong></p>
         <ul>
@@ -449,7 +497,7 @@
   <h3><span class="translation_missing" title="translation missing: en.apipie.returns">Returns</span></h3>
     <h4>Code: 200</h4>
       <h5>Description:</h5>
-      <p>Machine type has been destroyed</p>
+      <p>Piece part has been destroyed</p>
     <table class='table'>
       <thead>
         <tr>

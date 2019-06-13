@@ -6,6 +6,13 @@ class Api::MachineTypesController < ApplicationController
     render json: MachineTypeSerializer.new(MachineType.all).serializable_hash
   end
 
+  api :GET, '/machine_types/:id', 'Return a single machine type'
+  param :id, :number, 'Id of the machine type', required: true
+  returns code: 200, desc: 'Details of a machine type'
+  def show
+    render json: MachineTypeSerializer.new(MachineType.find(params[:id])).serializable_hash
+  end
+
   api :POST, '/machine_types/', 'Create a new machine type'
   param :name, String, 'Name of the machine type', required: true
   returns code: 200, desc: 'Newly created machine type'

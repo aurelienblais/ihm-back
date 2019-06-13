@@ -6,5 +6,8 @@ Rails.application.routes.draw do
     resources :cellules
     resources :machines
     resources :machine_types
+    resources :rules
+    resources :rule_steps
+    resources :piece_parts
   end
 end

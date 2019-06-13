@@ -9,6 +9,7 @@
   <h4><a href='#machine_types'>Machine types</a></h4>
   <ul>
       <li><a href='#machine_types-index'>index</a></li>
+      <li><a href='#machine_types-show'>show</a></li>
       <li><a href='#machine_types-create'>create</a></li>
       <li><a href='#machine_types-update'>update</a></li>
       <li><a href='#machine_types-destroy'>destroy</a></li>
@@ -20,6 +21,30 @@
       <li><a href='#machines-create'>create</a></li>
       <li><a href='#machines-update'>update</a></li>
       <li><a href='#machines-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#piece_parts'>Piece parts</a></h4>
+  <ul>
+      <li><a href='#piece_parts-index'>index</a></li>
+      <li><a href='#piece_parts-show'>show</a></li>
+      <li><a href='#piece_parts-create'>create</a></li>
+      <li><a href='#piece_parts-update'>update</a></li>
+      <li><a href='#piece_parts-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#rule_steps'>Rule steps</a></h4>
+  <ul>
+      <li><a href='#rule_steps-index'>index</a></li>
+      <li><a href='#rule_steps-show'>show</a></li>
+      <li><a href='#rule_steps-create'>create</a></li>
+      <li><a href='#rule_steps-update'>update</a></li>
+      <li><a href='#rule_steps-destroy'>destroy</a></li>
+  </ul>
+  <h4><a href='#rules'>Rules</a></h4>
+  <ul>
+      <li><a href='#rules-index'>index</a></li>
+      <li><a href='#rules-show'>show</a></li>
+      <li><a href='#rules-create'>create</a></li>
+      <li><a href='#rules-update'>update</a></li>
+      <li><a href='#rules-destroy'>destroy</a></li>
   </ul>
 
 
@@ -269,6 +294,43 @@
       <div>
         
 
+
+      </div>
+      <hr/>
+
+      <h3 id="machine_types-show">
+      <a href='#machine_types'>Machine types</a> / <a href='#machine_types-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/machine_types/:id
+            <br>
+            <small>Return a single machine type</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the machine type</p>
+
+    </li>
+    
+</ul>
 
       </div>
       <hr/>
@@ -683,6 +745,752 @@
       </small>
       
 <p>Id of the machine</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="piece_parts">
+      <a href='#piece_parts'>Piece parts</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="piece_parts-index">
+      <a href='#piece_parts'>Piece parts</a> / <a href='#piece_parts-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/piece_parts
+            <br>
+            <small>Return list of piece_parts</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="piece_parts-show">
+      <a href='#piece_parts'>Piece parts</a> / <a href='#piece_parts-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/piece_parts/:id
+            <br>
+            <small>Return a single piece part</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the piece part</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="piece_parts-create">
+      <a href='#piece_parts'>Piece parts</a> / <a href='#piece_parts-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /api/piece_parts
+            <br>
+            <small>Create a new piece part</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the piece part</p>
+
+    </li>
+    
+    <li>
+      <strong>stock </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Stock of the piece part</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="piece_parts-update">
+      <a href='#piece_parts'>Piece parts</a> / <a href='#piece_parts-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PATCH /api/piece_parts/:id
+            <br>
+            <small>Update a piece part</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the piece part</p>
+
+    </li>
+    
+    <li>
+      <strong>stock </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Stock of the piece part</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="piece_parts-destroy">
+      <a href='#piece_parts'>Piece parts</a> / <a href='#piece_parts-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /api/piece_parts/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the piece part</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="rule_steps">
+      <a href='#rule_steps'>Rule steps</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="rule_steps-index">
+      <a href='#rule_steps'>Rule steps</a> / <a href='#rule_steps-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/rule_steps
+            <br>
+            <small>Return list of rule steps</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="rule_steps-show">
+      <a href='#rule_steps'>Rule steps</a> / <a href='#rule_steps-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/rule_steps/:id
+            <br>
+            <small>Return a single rule step</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the rule step</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="rule_steps-create">
+      <a href='#rule_steps'>Rule steps</a> / <a href='#rule_steps-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /api/rule_steps
+            <br>
+            <small>Create a new rule step</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the rule step</p>
+
+    </li>
+    
+    <li>
+      <strong>order </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Order in the process</p>
+
+    </li>
+    
+    <li>
+      <strong>rule_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Associated rule</p>
+
+    </li>
+    
+    <li>
+      <strong>machine_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Associated machine</p>
+
+    </li>
+    
+    <li>
+      <strong>piece_part_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Associated piece part</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="rule_steps-update">
+      <a href='#rule_steps'>Rule steps</a> / <a href='#rule_steps-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PATCH /api/rule_steps/:id
+            <br>
+            <small>Update a rule step</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the rule step</p>
+
+    </li>
+    
+    <li>
+      <strong>order </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Order in the process</p>
+
+    </li>
+    
+    <li>
+      <strong>rule_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Associated rule</p>
+
+    </li>
+    
+    <li>
+      <strong>machine_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Associated machine</p>
+
+    </li>
+    
+    <li>
+      <strong>piece_part_id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Associated piece part</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="rule_steps-destroy">
+      <a href='#rule_steps'>Rule steps</a> / <a href='#rule_steps-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /api/rule_steps/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the rule step</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>
+
+  <hr/>
+
+  <div>
+    <h2 id="rules">
+      <a href='#rules'>Rules</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="rules-index">
+      <a href='#rules'>Rules</a> / <a href='#rules-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/rules
+            <br>
+            <small>Return list of rules</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+      </div>
+      <hr/>
+
+      <h3 id="rules-show">
+      <a href='#rules'>Rules</a> / <a href='#rules-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/rules/:id
+            <br>
+            <small>Return a single rule</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the rule</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="rules-create">
+      <a href='#rules'>Rules</a> / <a href='#rules-create'>create</a>
+      </h3>
+
+      <div>
+          <h4>
+              POST /api/rules
+            <br>
+            <small>Create a new rule</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the rule</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="rules-update">
+      <a href='#rules'>Rules</a> / <a href='#rules-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PATCH /api/rules/:id
+            <br>
+            <small>Update a rule</small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>name </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>Name of the rule</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="rules-destroy">
+      <a href='#rules'>Rules</a> / <a href='#rules-destroy'>destroy</a>
+      </h3>
+
+      <div>
+          <h4>
+              DELETE /api/rules/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+
+          <h4>Errors</h4>
+            400
+            An error occured while processing
+            <pre class="prettyprint lang-yaml">--- 
+</pre>
+
+            <br>
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a number.</p>
+ ]
+      </small>
+      
+<p>Id of the rule</p>
 
     </li>
     
