@@ -62,7 +62,7 @@ class Api::MachineTypesController < ApplicationController
 
   def machine_type_params
     params.require(:machine_type).permit(
-        :name
+      :name
     )
   end
 end

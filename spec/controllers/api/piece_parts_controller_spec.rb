@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Api::PiecePartsController do
   render_views
 
-  describe "GET #index" do
+  describe 'GET #index' do
     it 'returns all piece part' do
       object = FactoryBot.create :piece_part
       get :index
@@ -11,7 +13,7 @@ describe Api::PiecePartsController do
     end
   end
 
-  describe "GET #show" do
+  describe 'GET #show' do
     it 'returns piece part datas' do
       object = FactoryBot.create :piece_part
       get :show, params: { id: object.id }
@@ -67,7 +69,7 @@ describe Api::PiecePartsController do
 
     context 'deleting non-existent object' do
       it 'raises error' do
-        delete :destroy, params: { id: 99999 }
+        delete :destroy, params: { id: 99_999 }
         expect(response.status).to eq(400)
       end
     end

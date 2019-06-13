@@ -64,8 +64,8 @@ class Api::PiecePartsController < ApplicationController
 
   def piece_part_params
     params.require(:piece_part).permit(
-        :name,
-        :stock
+      :name,
+      :stock
     )
   end
 end

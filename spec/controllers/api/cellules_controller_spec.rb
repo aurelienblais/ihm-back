@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Api::CellulesController do
   render_views
 
-  describe "GET #index" do
+  describe 'GET #index' do
     it 'returns all cellules' do
       object = FactoryBot.create :cellule
       get :index
@@ -11,7 +13,7 @@ describe Api::CellulesController do
     end
   end
 
-  describe "GET #show" do
+  describe 'GET #show' do
     it 'returns cellule datas' do
       object = FactoryBot.create :cellule
       machine = FactoryBot.create :machine
@@ -70,7 +72,7 @@ describe Api::CellulesController do
 
     context 'deleting non-existent object' do
       it 'raises error' do
-        delete :destroy, params: { id: 99999 }
+        delete :destroy, params: { id: 99_999 }
         expect(response.status).to eq(400)
       end
     end

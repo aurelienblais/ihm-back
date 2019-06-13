@@ -2,56 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235434ab-c6be-4b90-b9a6-b34e8788a357" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/api/cellules_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/api/machine_types_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/api/machines_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/api/piece_parts_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/api/rule_steps_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/application_record_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/rule_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/cellules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/cellules_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/machine_types_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/machine_types_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/machines_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/machines_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/jobs/application_job.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/machine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/machine.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/cellule_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/cellule_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/cellule_short_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/cellule_short_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/machine_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/machine_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/machine_short_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/machine_short_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/machine_type_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/machine_type_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/piece_part_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/piece_part_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/piece_part_short_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/piece_part_short_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/rule_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/rule_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/rule_short_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/rule_short_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/rule_step_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/rule_step_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/serializers/rule_step_short_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/rule_step_short_serializer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/apipie.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/apipie.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/cellule.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/cellule.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/machine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/machine.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/machine_type.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/machine_type.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/piece_part.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/piece_part.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/rule.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/rule.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/rule_step.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/rule_step.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/cellule_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/cellule_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/machine_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/machine_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/machine_type_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/machine_type_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/piece_part_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/piece_part_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/rule_step_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/rule_step_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/api/cellules_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/cellules_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/api/machine_types_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/machine_types_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/api/machines_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/machines_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/api/piece_parts_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/piece_parts_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/api/rule_steps_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/rule_steps_controller_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -166,8 +129,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <first_editor relative-caret-position="60">
+                <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -507,7 +470,7 @@
       <workItem from="1559938648152" duration="21000" />
       <workItem from="1560263447743" duration="3825000" />
       <workItem from="1560326465764" duration="69000" />
-      <workItem from="1560423969745" duration="7178000" />
+      <workItem from="1560423969745" duration="7419000" />
     </task>
     <servers />
   </component>
@@ -517,13 +480,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14147000" />
+    <option name="totallyTimeSpent" value="14388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -536,7 +499,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928468" weight="0.32961586" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49284694" visible="true" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49284694" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5071531" side_tool="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32961586" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49713877" weight="0.32961586" />
@@ -913,8 +876,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <first_editor relative-caret-position="60">
+            <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>

@@ -62,7 +62,7 @@ class Api::RulesController < ApplicationController
 
   def rule_params
     params.require(:rule).permit(
-        :name
+      :name
     )
   end
 end

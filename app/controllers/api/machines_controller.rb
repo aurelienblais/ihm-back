@@ -68,10 +68,10 @@ class Api::MachinesController < ApplicationController
 
   def machine_params
     params.require(:machine).permit(
-        :name,
-        :available,
-        :cellule_id,
-        :machine_type_id
+      :name,
+      :available,
+      :cellule_id,
+      :machine_type_id
     )
   end
 end

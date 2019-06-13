@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Api::RuleStepsController do
   render_views
 
-  describe "GET #index" do
+  describe 'GET #index' do
     it 'returns all rule step' do
       object = FactoryBot.create :rule_step
       get :index
@@ -11,7 +13,7 @@ describe Api::RuleStepsController do
     end
   end
 
-  describe "GET #show" do
+  describe 'GET #show' do
     it 'returns rule step datas' do
       object = FactoryBot.create :rule_step
       get :show, params: { id: object.id }
@@ -70,7 +72,7 @@ describe Api::RuleStepsController do
 
     context 'deleting non-existent object' do
       it 'raises error' do
-        delete :destroy, params: { id: 99999 }
+        delete :destroy, params: { id: 99_999 }
         expect(response.status).to eq(400)
       end
     end

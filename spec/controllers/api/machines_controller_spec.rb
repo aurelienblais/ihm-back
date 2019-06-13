@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Api::MachinesController do
   render_views
 
-  describe "GET #index" do
+  describe 'GET #index' do
     it 'returns all machines' do
       object = FactoryBot.create :machine
       get :index
@@ -11,7 +13,7 @@ describe Api::MachinesController do
     end
   end
 
-  describe "GET #show" do
+  describe 'GET #show' do
     it 'returns machines datas' do
       object = FactoryBot.create :machine
       get :show, params: { id: object.id }
@@ -68,7 +70,7 @@ describe Api::MachinesController do
 
     context 'deleting non-existent object' do
       it 'raises error' do
-        delete :destroy, params: { id: 99999 }
+        delete :destroy, params: { id: 99_999 }
         expect(response.status).to eq(400)
       end
     end

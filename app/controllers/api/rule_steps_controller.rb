@@ -70,11 +70,11 @@ class Api::RuleStepsController < ApplicationController
 
   def rule_step_params
     params.require(:rule_step).permit(
-        :name,
-        :order,
-        :rule_id,
-        :machine_id,
-        :piece_part_id
+      :name,
+      :order,
+      :rule_id,
+      :machine_id,
+      :piece_part_id
     )
   end
 end

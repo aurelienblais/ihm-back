@@ -63,7 +63,7 @@ class Api::CellulesController < ApplicationController
 
   def cellule_params
     params.require(:cellule).permit(
-        :name
+      :name
     )
   end
 end
