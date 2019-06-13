@@ -4,7 +4,15 @@ class Machine < ActiveRecord::Base
   belongs_to :cellule, optional: true
   belongs_to :machine_type
   has_many :rule_steps
-  has_many :rule, through: :rule_steps
+  has_many :rules, through: :rule_steps
 
   validates_presence_of :name
+
+  before_commit :set_available
+
+  private
+
+  def set_available
+    available = !!available
+  end
 end
