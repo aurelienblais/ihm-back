@@ -1,4 +1,7 @@
-![Maintener](https://image.noelshack.com/fichiers/2019/24/4/1560433822-logo.png)
+<p align="center">
+  <img width="638" height="134" src="https://image.noelshack.com/fichiers/2019/24/4/1560433822-logo.png">
+</p>
+
 # README
 
 * Ruby version : 2.5.3
