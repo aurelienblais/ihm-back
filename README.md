@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/aurelienblais/ihm-back.svg?token=vaQxUtjRjKXazYSwVqcN&branch=master)](https://travis-ci.com/aurelienblais/ihm-back)
-
 ![Maintener](https://image.noelshack.com/fichiers/2019/24/4/1560433822-logo.png)
 # README
 
@@ -13,6 +11,13 @@
 * `rails db:migrate`
 * `rails s`
 * Navigate to `localhost:3000`
+
+# Updating
+* `bundle`
+* `rails db:migrate`
+
+# Running tests
+* `rspec`
 
 # Api
 
