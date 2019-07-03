@@ -13,7 +13,7 @@ class Api::CellulesController < ApplicationController
   returns code: 200, desc: 'Details of a cellule'
 
   def show
-    render json: CelluleSerializer.new(Cellule.find(params[:id]), include: [:machines]).serializable_hash
+    render json: CelluleSerializer.new(Cellule.find(params[:id])).serializable_hash
   end
 
   api :POST, '/cellules/', 'Create a new cellule'
@@ -25,7 +25,7 @@ class Api::CellulesController < ApplicationController
 
   def create
     @cellule = Cellule.create! cellule_params
-    render json: CelluleSerializer.new(@cellule, include: [:machines]).serializable_hash
+    render json: CelluleSerializer.new(@cellule).serializable_hash
   rescue Exception => e
     render json: { error: e.message }, status: 400
   end

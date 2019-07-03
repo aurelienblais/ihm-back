@@ -4,7 +4,7 @@ class RuleStepSerializer
   include FastJsonapi::ObjectSerializer
   attributes :name, :order
 
-  belongs_to :rule
-  belongs_to :machine
-  belongs_to :piece_part
+  attributes :piece_part do |rule_step|
+    PiecePartSerializer.new(rule_step.piece_part).as_json
+  end
 end
