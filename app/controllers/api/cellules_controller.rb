@@ -5,7 +5,7 @@ class Api::CellulesController < ApplicationController
   returns code: 200, desc: 'List of all cellules'
 
   def index
-    render json: CelluleShortSerializer.new(Cellule.all).serializable_hash
+    render json: CelluleSerializer.new(Cellule.all).serializable_hash
   end
 
   api :GET, '/cellules/:id', 'Return a single cellule'

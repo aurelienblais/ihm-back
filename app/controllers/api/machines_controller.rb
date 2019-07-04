@@ -5,7 +5,7 @@ class Api::MachinesController < ApplicationController
   returns code: 200, desc: 'List of all machines'
 
   def index
-    render json: MachineShortSerializer.new(Machine.all).serializable_hash
+    render json: MachineSerializer.new(Machine.all).serializable_hash
   end
 
   api :GET, '/machines/:id', 'Return a single machine'
