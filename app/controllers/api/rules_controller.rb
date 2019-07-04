@@ -5,7 +5,7 @@ class Api::RulesController < ApplicationController
   returns code: 200, desc: 'List of all rules'
 
   def index
-    render json: RuleShortSerializer.new(Rule.all).serializable_hash
+    render json: RuleSerializer.new(Rule.all).serializable_hash
   end
 
   api :GET, '/rules/:id', 'Return a single rule'

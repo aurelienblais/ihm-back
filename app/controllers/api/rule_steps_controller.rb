@@ -5,7 +5,7 @@ class Api::RuleStepsController < ApplicationController
   returns code: 200, desc: 'List of all rule steps'
 
   def index
-    render json: RuleStepShortSerializer.new(RuleStep.all).serializable_hash
+    render json: RuleStepSerializer.new(RuleStep.all).serializable_hash
   end
 
   api :GET, '/rule_steps/:id', 'Return a single rule step'

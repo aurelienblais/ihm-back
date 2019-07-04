@@ -5,7 +5,7 @@ class Api::PiecePartsController < ApplicationController
   returns code: 200, desc: 'List of all piece_parts'
 
   def index
-    render json: PiecePartShortSerializer.new(PiecePart.all).serializable_hash
+    render json: PiecePartSerializer.new(PiecePart.all).serializable_hash
   end
 
   api :GET, '/piece_parts/:id', 'Return a single piece part'

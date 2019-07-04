@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="235434ab-c6be-4b90-b9a6-b34e8788a357" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/cellules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/cellules_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/machines_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/machines_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/serializers/machine_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/machine_serializer.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../rapport/mt79-rsa.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,10 +81,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/rules_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="105">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -97,11 +116,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/machines_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="30">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serializers/machine_serializer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -140,25 +168,6 @@
               <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/rule.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -218,21 +227,21 @@
         <option value="$PROJECT_DIR$/app/controllers/api/machine_types_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/machine.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/api/machines_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/api/piece_parts_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/api/rule_steps_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/api/rule_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" />
         <option value="$PROJECT_DIR$/spec/models/application_record_spec.rb" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/serializers/rule_serializer.rb" />
         <option value="$PROJECT_DIR$/app/serializers/rule_step_serializer.rb" />
-        <option value="$PROJECT_DIR$/app/serializers/machine_serializer.rb" />
         <option value="$PROJECT_DIR$/app/serializers/cellule_serializer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/cellules_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/machines_controller.rb" />
+        <option value="$PROJECT_DIR$/app/serializers/machine_serializer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/rules_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb" />
       </list>
     </option>
   </component>
@@ -498,7 +507,7 @@
       <workItem from="1560423969745" duration="8262000" />
       <workItem from="1560503893205" duration="39000" />
       <workItem from="1561964259589" duration="1199000" />
-      <workItem from="1562192029350" duration="1549000" />
+      <workItem from="1562192029350" duration="2048000" />
     </task>
     <servers />
   </component>
@@ -508,7 +517,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18018000" />
+    <option name="totallyTimeSpent" value="18517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -796,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/api/rule_steps_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -811,13 +813,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/machine.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -869,20 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/serializers/machine_serializer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/rules_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cellule.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -906,8 +887,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/machines_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/machine_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/rules_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/rule_steps_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/piece_parts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
