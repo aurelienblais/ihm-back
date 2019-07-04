@@ -2,5 +2,5 @@
 
 class MachineShortSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name
+  attributes :name, :machine_type
 end
